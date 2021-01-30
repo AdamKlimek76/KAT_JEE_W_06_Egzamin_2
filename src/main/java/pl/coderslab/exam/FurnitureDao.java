@@ -20,4 +20,17 @@ public class FurnitureDao {
 
 		return list;
 	}
+
+	public List<Furniture>deleteFurniture(int id, List<Furniture>list){
+		List <Furniture>furnitures=new ArrayList<>();
+		for (int i = 0; i <list.size() ; i++) {
+			if(list.get(i).getId()!=id){
+				furnitures.add(list.get(i));
+			}
+		}
+
+		return furnitures;
+	}
 }
+
+

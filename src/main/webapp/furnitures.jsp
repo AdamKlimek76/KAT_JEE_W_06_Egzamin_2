@@ -15,7 +15,8 @@
 <table>
     <c:forEach items="${furnitures}" var="furniture">
         <tr>
-            <td>${furniture.id}, ${furniture.name}, ${furniture.description}, ${furniture.quantity}</td>
+            <td>${furniture.id}, ${furniture.name}, ${furniture.description}, ${furniture.quantity},
+                <a href='<c:url value="/deleteFurniture?id=${furniture.id}" />'>usuń</a><br></td>
         </tr>
     </c:forEach>
 </table>
